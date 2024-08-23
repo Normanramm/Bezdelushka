@@ -1,3 +1,6 @@
+import pyttsx3
+
+
 class CalculatorClass:
     '''Класс для калькулятора(calculate)'''
 
@@ -77,6 +80,26 @@ class MathematicalClass:
         print(f'Сумма за год: {money_after // 100, money_after % 100}')
 
 
+class ProgrammClass:
+    '''Класс для программ'''
+
+    def golos(self):
+        tts = pyttsx3.init()
+
+        voices = tts.getProperty('voices')
+
+        # Задать голос по умолчанию
+        tts.setProperty('voice', 'ru')
+
+        # Попробовать установить предпочтительный голос
+        for voice in voices:
+            if voice.name == 'Aleksandr':
+                tts.setProperty('voice', voice.id)
+
+        tts.say(input("Введите текст и он будет звучать: "))
+        tts.runAndWait()
+
+
 def calculate():  # Калькулятор
     operation = input("Выберите операцию: +, -, *, /, %, **, //: ")
     calculator = CalculatorClass()
@@ -100,20 +123,31 @@ def math():  # Математические функции
         print("Неправильный выбор операции!")
 
 
+def programm():
+    choice = input("""Программы:
+    1 - Произношение голоса
+    2 - Скорость интернета """)
+    programmi = ProgrammClass()
+    if choice == "1":
+        print(programmi.golos())
+    elif choice == "2":
+        pass
+    else:
+        print("Неправильный выбор операции!")
+
+
 def choose():  # Функция для выбора операции(наверно стоит засунуть в класс)
     choice = input("""Выберите функционал: 
     1 - Калькулятор
     2 - Математические функции
-    3 - Скачать весь ЮТУБ
-    4 - Голос робота
-    5 - Скорость интернета """
+    3 - Программы """
                    )
     if choice == "1":
         calculate()
     elif choice == "2":
         math()
     elif choice == "3":
-        pass
+        programm()
     elif choice == "4":
         pass
     else:
@@ -125,6 +159,8 @@ def choose():  # Функция для выбора операции(навер�
             calculate()
         elif flag == 'да' and choice == '2':
             math()
+        elif flag == 'да' and choice == '3':
+            programm()
         elif flag == "нет":
             choose()
         else:
