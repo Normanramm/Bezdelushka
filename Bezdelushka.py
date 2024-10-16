@@ -1,5 +1,6 @@
 import pyttsx3
 import speedtest
+import math
 
 
 class CalculatorClass:
@@ -65,6 +66,7 @@ class MathematicalClass:
     '''Класс для математических функций(math)'''
 
     def table(self):
+
         for i in range(1, 10):
             print('-' * 34)
             for y in range(1, 10):
@@ -79,6 +81,37 @@ class MathematicalClass:
         money_before = 100 * x + y
         money_after = int(money_before * (100 + p) / 100)
         print(f'Сумма за год: {money_after // 100, money_after % 100}')
+
+    def injiner_calculator(self):
+
+        try:
+            operation = input(
+                '''Введите математическую функцию: 
+                1 - sin
+                2 - cos
+                3 - tan 
+                4 - sqrt (квадратный корень) 
+                5 - pow (возведение в степень)''')
+
+            num = float(input("Введите число: "))
+
+            if operation == '1':
+                print(round(math.sin(math.radians(num)), 2))
+            elif operation == '2':
+                print(round(math.cos(math.radians(num)), 2))
+            elif operation == '3':
+                print(round(math.tan(math.radians(num)), 2))
+            elif operation == '4':
+                print(math.sqrt(num))
+            elif operation == '5':
+                power = float(input("Введите степень: "))
+                print(round(num ** power, 2))
+            else:
+                print("Неверная функция")
+
+
+        except ValueError:
+            print("Введены некорректные данные. Пожалуйста, введите число.")
 
 
 class ProgrammClass:
@@ -135,7 +168,7 @@ speed_test = SpeedTest()
 '''Функции для выбора выполннения классов'''
 
 
-def calculate():  # Калькулятор для class CalculatorClass
+def calculate_functions():  # Калькулятор для class CalculatorClass
     operation = input("Выберите операцию: +, -, *, /, %, **, //: ")
     calculator = CalculatorClass()
     try:
@@ -145,20 +178,23 @@ def calculate():  # Калькулятор для class CalculatorClass
         print("Неправильный выбор операции!")
 
 
-def math():  # Математические функции для class MathematicalClass
+def mathematical_functions():  # Математические функции для class MathematicalClass
     choice = input("""Математические функции:
     1 - Таблица умножения
-    2 - Процентная ставка за год """)
+    2 - Процентная ставка за год
+    3 - Инженерный калькулятор""")
     mathematical = MathematicalClass()
     if choice == "1":
         print(mathematical.table())
     elif choice == "2":
         print(mathematical.procent_stavka())
+    elif choice == "3":
+        print(mathematical.injiner_calculator())
     else:
         print("Неправильный выбор операции!")
 
 
-def programm():  # Программы функция для class ProgrammClass
+def programm_functions():  # Программы функция для class ProgrammClass
     choice = input("""Программы:
     1 - Произношение голоса
     2 - Скорость интернета """)
@@ -182,11 +218,11 @@ def choose():
     3 - Программы """
                    )
     if choice == "1":
-        calculate()
+        calculate_functions()
     elif choice == "2":
-        math()
+        mathematical_functions()
     elif choice == "3":
-        programm()
+        programm_functions()
     elif choice == "4":
         pass
     else:
@@ -195,11 +231,11 @@ def choose():
     while True:
         flag = input("Еще раз: да / нет: ")
         if flag == "да" and choice == '1':
-            calculate()
+            calculate_functions()
         elif flag == 'да' and choice == '2':
-            math()
+            mathematical_functions()
         elif flag == 'да' and choice == '3':
-            programm()
+            programm_functions()
         elif flag == "нет":
             choose()
         else:
