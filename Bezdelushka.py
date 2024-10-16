@@ -129,7 +129,6 @@ class SpeedTest:
 
 
 speed_test = SpeedTest()
-print('Идет загрузка!')
 # speed_test.print_results()
 
 
@@ -167,6 +166,7 @@ def programm():  # Программы функция для class ProgrammClass
     if choice == "1":
         print(programmi.golos())
     elif choice == "2":
+        print('Идет загрузка, ждите!')
         print(speed_test.print_results())
     else:
         print("Неправильный выбор операции!")
