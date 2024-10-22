@@ -147,6 +147,9 @@ class ProgrammClass:
 class SpeedTest:
     def __init__(self):
         self.st = speedtest.Speedtest()
+        self.ds = True
+        self.us = True
+        self.ping = True
 
     def test(self):
         self.ds = self.st.download()
