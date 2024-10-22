@@ -4,7 +4,7 @@ import math
 
 
 class CalculatorClass:
-    '''Класс для калькулятора(calculate)'''
+    """Класс для калькулятора(calculate)"""
 
     def __init__(self):
         self.operations = {
@@ -17,22 +17,26 @@ class CalculatorClass:
             "//": self.floor_divide
         }
 
-    def plus(self):
+    @staticmethod
+    def plus():
         a = float(input("Введите первое число: "))
         b = float(input("Введите второе число: "))
         return f"{a} + {b} = {a + b}"
 
-    def minus(self):
+    @staticmethod
+    def minus():
         a = float(input("Введите первое число: "))
         b = float(input("Введите второе число: "))
         return f"{a} - {b} = {a - b}"
 
-    def multiply(self):
+    @staticmethod
+    def multiply():
         a = float(input("Введите первое число: "))
         b = float(input("Введите второе число: "))
         return f"{a} * {b} = {a * b}"
 
-    def divide(self):
+    @staticmethod
+    def divide():
         try:
             a = float(input("Введите делимое: "))
             b = float(input("Введите делитель: "))
@@ -40,7 +44,8 @@ class CalculatorClass:
         except ZeroDivisionError:
             print("На ноль делить нельзя!")
 
-    def modulo(self):
+    @staticmethod
+    def modulo():
         try:
             a = float(input("Введите делимое: "))
             b = float(input("Введите делитель: "))
@@ -48,12 +53,14 @@ class CalculatorClass:
         except ZeroDivisionError:
             print("На ноль делить нельзя!")
 
-    def power(self):
+    @staticmethod
+    def power():
         a = float(input("Введите основание: "))
         b = float(input("Введите степень: "))
         return f"{a} ** {b} = {a ** b}"
 
-    def floor_divide(self):
+    @staticmethod
+    def floor_divide():
         try:
             a = float(input("Введите делимое: "))
             b = float(input("Введите делитель: "))
@@ -63,9 +70,10 @@ class CalculatorClass:
 
 
 class MathematicalClass:
-    '''Класс для математических функций(math)'''
+    """Класс для математических функций(math)"""
 
-    def table(self):
+    @staticmethod
+    def table():
 
         for i in range(1, 10):
             print('-' * 34)
@@ -73,7 +81,8 @@ class MathematicalClass:
                 print(i * y, end="\t")
             print()
 
-    def procent_stavka(self):
+    @staticmethod
+    def procent_stavka():
 
         p = int(input("Процент: "))  # процент
         x = int(input("Рубли: "))  # рубли
@@ -82,7 +91,8 @@ class MathematicalClass:
         money_after = int(money_before * (100 + p) / 100)
         print(f'Сумма за год: {money_after // 100, money_after % 100}')
 
-    def injiner_calculator(self):
+    @staticmethod
+    def injiner_calculator():
 
         try:
             operation = input(
@@ -109,15 +119,15 @@ class MathematicalClass:
             else:
                 print("Неверная функция")
 
-
         except ValueError:
             print("Введены некорректные данные. Пожалуйста, введите число.")
 
 
 class ProgrammClass:
-    '''Класс для программ'''
+    """Класс для программ"""
 
-    def golos(self):
+    @staticmethod
+    def golos():
         tts = pyttsx3.init()
 
         voices = tts.getProperty('voices')
@@ -145,7 +155,8 @@ class SpeedTest:
 
         return self.ds, self.us, self.ping
 
-    def humansize(self, nbytes):
+    @staticmethod
+    def humansize(nbytes):
         suffixes = ['B', 'KB', 'MB', 'GB', 'TB', 'PB']
         i = 0
         while nbytes >= 1024 and i < len(suffixes) - 1:
@@ -165,7 +176,7 @@ speed_test = SpeedTest()
 # speed_test.print_results()
 
 
-'''Функции для выбора выполннения классов'''
+"""Функции для выбора выполннения классов"""
 
 
 def calculate_functions():  # Калькулятор для class CalculatorClass
@@ -208,7 +219,7 @@ def programm_functions():  # Программы функция для class Prog
         print("Неправильный выбор операции!")
 
 
-'''Функция для выбора операции(наверно стоит засунуть в класс)'''
+"""Функция для выбора операции(наверно стоит засунуть в класс)"""
 
 
 def choose():
@@ -243,8 +254,3 @@ def choose():
 
 
 choose()
-
-
-# коментарий из пайчарм потом удалить это для проверки
-# второй проверочный коментарий
-# третий проверочный коментарий
