@@ -7,6 +7,9 @@ from unittest import TestCase, main
 
 import main  # чтобы импортировать все
 
+# from unittest import TestCase, main это лучший вариант юнит тестирования
+# from MyPrograms.alesson import qwerty путь к юнит тестированию
+
 '''Образец тестирования'''
 
 
