@@ -11,11 +11,11 @@
   <br />
   
   ![License](https://img.shields.io/badge/License-MIT-3776AB?style=for-the-badge&logo=opensourceinitiative&logoColor=white)
-  ![Last Commit](https://img.shields.io/github/last-commit/Normanramm/PythonAvrely?style=for-the-badge&color=2ea44f)
-  ![Repo Size](https://img.shields.io/github/repo-size/Normanramm/PythonAvrely?style=for-the-badge&color=blueviolet)
-  ![Stars](https://img.shields.io/github/stars/Normanramm/PythonAvrely?style=for-the-badge&color=yellow)
-  ![Forks](https://img.shields.io/github/forks/Normanramm/PythonAvrely?style=for-the-badge&color=blue)
-  ![Languages](https://img.shields.io/github/languages/count/Normanramm/PythonAvrely?style=for-the-badge&color=orange)
+  ![Last Commit](https://img.shields.io/github/last-commit/Normanramm/Bezdelushka?style=for-the-badge&color=2ea44f)
+  ![Repo Size](https://img.shields.io/github/repo-size/Normanramm/Bezdelushka?style=for-the-badge&color=blueviolet)
+  ![Stars](https://img.shields.io/github/stars/Normanramm/Bezdelushka?style=for-the-badge&color=yellow)
+  ![Forks](https://img.shields.io/github/forks/Normanramm/Bezdelushka?style=for-the-badge&color=blue)
+  ![Languages](https://img.shields.io/github/languages/count/Normanramm/Bezdelushka?style=for-the-badge&color=orange)
   
 
   <br />
