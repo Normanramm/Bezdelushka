@@ -16,7 +16,6 @@
   ![Stars](https://img.shields.io/github/stars/Normanramm/Bezdelushka?style=for-the-badge&color=yellow)
   ![Forks](https://img.shields.io/github/forks/Normanramm/Bezdelushka?style=for-the-badge&color=blue)
   ![Languages](https://img.shields.io/github/languages/count/Normanramm/Bezdelushka?style=for-the-badge&color=orange)
-  
 
   <br />
   <br />
@@ -53,6 +52,10 @@
 - запускать Bezdelushka_4v1_tkinter.py (немного измененная версия Bezdelushka_4_tkinter.py)
 
 ## 🚀 Как запустить
+
+[![Clone](https://img.shields.io/badge/📥_Clone-2ea44f?style=for-the-badge&logo=git&logoColor=white)](https://github.com/Normanramm/Bezdelushka)
+[![Download ZIP](https://img.shields.io/badge/📦_ZIP-Download-181717?style=for-the-badge&logo=github)](https://github.com/Normanramm/Bezdelushka/archive/refs/heads/main.zip)
+[![Fork](https://img.shields.io/badge/🍴_Fork-Repository-f7df1e?style=for-the-badge&logo=github&logoColor=black)](https://github.com/Normanramm/Bezdelushka/fork)
 
 ```bash
 # Клонируйте репозиторий
