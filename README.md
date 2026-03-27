@@ -13,7 +13,6 @@
   ![License](https://img.shields.io/badge/License-MIT-3776AB?style=for-the-badge&logo=opensourceinitiative&logoColor=white)
   ![Last Commit](https://img.shields.io/github/last-commit/Normanramm/PythonAvrely?style=for-the-badge&color=2ea44f)
 
-
   <br />
   <br />
 
@@ -42,3 +41,24 @@
 - ✅ Инженерный калькулятор
 - ✅ Расчет процентов
 - ✅❌ Измерять скорость интернета
+
+## 🎯 Файлы
+
+- запускать Bezdelushka_4_tkinter.py
+- запускать Bezdelushka_4v1_tkinter.py (немного измененная версия Bezdelushka_4_tkinter.py)
+
+## 🚀 Как запустить
+
+```bash
+# Клонируйте репозиторий
+git clone https://github.com/Normanramm/Bezdelushka.git
+
+# Перейдите в папку
+cd Bezdelushka
+
+# Установите зависимости (если есть)
+pip install -r requirements.txt
+
+# Запустите
+python main.py
+```
