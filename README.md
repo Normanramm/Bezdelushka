@@ -1,6 +1,6 @@
 <div align="center">
   
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3500&color=58A6FF&center=true&vCenter=true&multiline=false&lines=🐍+PythonAvrely;Scripts+%26+Tkinter-Projects;by+Vladislav" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3500&color=58A6FF&center=true&vCenter=true&multiline=false&lines=🐍+Bezdelushka;Python+%26+Tkinter-Projects;by+Vladislav" alt="Typing SVG" />
   
   <br />
 
@@ -12,7 +12,7 @@
   
   ![License](https://img.shields.io/badge/License-MIT-3776AB?style=for-the-badge&logo=opensourceinitiative&logoColor=white)
   ![Last Commit](https://img.shields.io/github/last-commit/Normanramm/PythonAvrely?style=for-the-badge&color=2ea44f)
-  ![Repo Size](https://img.shields.io/github/repo-size/Normanramm/PythonAvrely?style=for-the-badge&color=blueviolet)
+
 
   <br />
   <br />
@@ -32,3 +32,13 @@
 - ✅ Готовые решения — копируй и запускай
 - ✅ Чистый код — с комментариями и примерами
 - ✅ Переодически пополнял — возможно в будущем, будет что то стоящее!
+
+## 🧩 Что умеет
+
+- ✅ Калькулятор
+- ✅ Математические функции
+- ✅ Воспроизвести текст голосом
+- ✅ Таблица умножения
+- ✅ Инженерный калькулятор
+- ✅ Расчет процентов
+- ✅❌ Измерять скорость интернета
