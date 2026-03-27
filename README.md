@@ -1,6 +1,6 @@
 <div align="center">
   
- <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3500&color=58A6FF&center=true&vCenter=true&multiline=false&lines=🐍+PythonAvrely;%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0+делает+все+по-немногу;by+Vladislav+Avrely" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3500&color=58A6FF&center=true&vCenter=true&multiline=false&lines=🐍+PythonAvrely;Scripts+%26+Tkinter-Projects;by+Vladislav" alt="Typing SVG" />
   
   <br />
 
